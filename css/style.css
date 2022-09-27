@@ -1,3 +1,16 @@
+:root {
+  /* Основные шрифты */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Основные цвета */
+  --primery-text-color: #757575;
+  --primery-white-color: #ffffff;
+  --primery-title-color: #212121;
+  --accent-color: #2196f3;
+  --primery-team-color: #f5f4fa;
+  --primery-background-color: #2f303a;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
@@ -14,19 +27,21 @@ ul {
 }
 
 .header {
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
+  color: var(--primery-white-color);
 }
 
 .header-link {
-  color: black;
+  color: var(--primery-title-color);
 }
 .header-link:hover,
 .header-link:focus {
+  color: var(--accent-color);
+}
+.footer-address:hover,
+.footer-address:focus {
   color: #2196f3;
 }
+
 .contact-item {
   color: #757575;
 }
@@ -39,14 +54,34 @@ ul {
   background-color: #2196f3;
   color: #ffffff;
 }
-.video-item {
+.hero-item {
   background: #2f303a;
   color: #ffffff;
 }
-.video-text {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 6%;
-  text-align: center;
+.hero-text {
+  color: #ffffff;
+}
+.benefits-title {
+  color: #212121;
+}
+.benefits-text {
+  color: #757575;
+}
+.images-title {
+  color: #212121;
+}
+.team {
+  color: #212121;
+}
+.team-name {
+  color: #212121;
+}
+.team-profession {
+  color: #757575;
+}
+/* Портфолио */
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
 }
