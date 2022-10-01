@@ -20,6 +20,7 @@ body {
   text-decoration: none;
 }
 .list-stylenone {
+  font-style: normal;
   list-style: none;
 }
 .text-decorationnone{
@@ -78,15 +79,15 @@ body {
 
 .footer-address:hover,
 .footer-address:focus {
+  
   color: var(--accent-color);
 }
 
 .contact-item {
     font-family: var(--main-font);
-      font-weight: 400;
-      font-style: normal;
       font-size: 14px;
       line-height: 1.1;
+    
   color: var(--primery-text-color);
 }
 .contact-item:hover,
@@ -125,7 +126,7 @@ color: var(--primery-white-color)
 }
 .benefits-text {
   font-family: var(--main-font);
-  font-weight: 400;
+  
   font-size: 14px;
   line-height: 1.7;
   color: var(--primery-text-color)
@@ -164,7 +165,7 @@ color: var(--primery-white-color)
 }
 .team-profession {
   font-family: var(--main-font);
-  font-weight: 400;
+  
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -175,8 +176,7 @@ color: var(--primery-white-color)
 }
 .footer-address {
     font-family: var(--main-font);
-      font-weight: 400;
-      font-style: normal;
+    
       font-size: 14px;
       line-height: 1.7;
       letter-spacing: 0.03em;
@@ -203,7 +203,7 @@ color: var(--primery-white-color)
 }
 .projects-text{
   font-family: var(--main-font);
-  font-weight: 400;
+ 
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
