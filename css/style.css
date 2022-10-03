@@ -73,13 +73,15 @@ body {
   color: var(--accent-color);
 }
 
-
+.contact .contact-item{
+  font-weight: 500;
+}
 
 .contact-item {
     font-family: var(--main-font);
+    font-weight: 400;
       font-size: 14px;
       line-height: 1.14;
-      font-weight: 500;
       letter-spacing: 0.02em;
     
   color: var(--primery-text-color);
@@ -174,7 +176,7 @@ color: var(--primery-white-color)
 }
 .footer-address {
     font-family: var(--main-font);
-    
+    font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
