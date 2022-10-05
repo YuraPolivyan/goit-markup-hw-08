@@ -12,33 +12,43 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+    ">
     <link rel="stylesheet" href="./css/style.css" />
+   
   </head>
 
   <body>
     <header class="header">
+      <div class="container header-container">
       <a class="text-decorationnone" href="./index.html"
         ><span class="header-logo">Web</span><span class="header-logo1">Studio</span></a
       >
+      
       <nav>
-        <ul class="list-stylenone">
+        <ul class="header-nav">
           <li class="header-item"><a class="header-link text-decorationnone" href="./index.html">Студія</a></li>
           <li class="header-item"><a class="header-link text-decorationnone" href="./portfolio.html">Портфоліо</a></li>
           <li class="header-item"><a class="header-link text-decorationnone" href="">Контакти</a></li>
         </ul>
       </nav>
+      
       <ul class="contact">
         <li><a class="contact-item text-decorationnone" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="contact-item text-decorationnone" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
     <main>
       <section class="hero-item">
+        <div class="container">
         <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button-item">Замовити послугу</button>
+        </div>
       </section>
 
       <section class="section-benefits">
+        <div class="container">
         <h2 class="benefits-h2">Наші переваги</h2>
         <ul class="list-stylenone">
           <li>
@@ -66,50 +76,56 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="section-images">
+        <div class="container">
         <h2 class="images-title">Чим ми займаємося</h2>
         <ul class="list-stylenone">
-          <li>
+          <li class="product-img">
             <img src="./images/img.jpg" alt="руки на клавіатурі" width="370" />
           </li>
 
-          <li>
+          <li class="product-img">
             <img src="./images/img1.jpg" alt="компьютер та телефон" width="370" />
           </li>
 
-          <li>
+          <li class="product-img">
             <img src="./images/img2.jpg" alt="ручка та планшет" width="370" />
           </li>
         </ul>
+        </div>
       </section>
       <section class="team-background">
+        <div class="container">
         <h2 class="team">Наша команда</h2>
         <ul class="list-stylenone">
           <li>
-            <img src="./images/JPG.jpg" alt="усміхнений хлопець в окулярах" width="270" />
+            <img class="img-team" src="./images/JPG.jpg" alt="усміхнений хлопець в окулярах" width="270" />
             <h3 class="team-name">Ігор Дем'яненко</h3>
             <p class="team-profession">Product Designer</p>
           </li>
           <li>
-            <img src="./images/JPG(1).jpg" alt="усміхнена дівчина" width="270" />
+            <img class="img-team" src="./images/JPG(1).jpg" alt="усміхнена дівчина" width="270" />
             <h3 class="team-name">Ольга Рєпіна</h3>
             <p class="team-profession">Frontend Developer</p>
           </li>
           <li>
-            <img src="./images/JPG(2).jpg" alt="хлопець з посмішкою" width="270" />
+            <img class="img-team" src="./images/JPG(2).jpg" alt="хлопець з посмішкою" width="270" />
             <h3 class="team-name">Микола Тарасов</h3>
             <p class="team-profession">Marketing</p>
           </li>
           <li>
-            <img src="./images/JPG(3).jpg" alt="хлопець в окулярах" width="270" />
+            <img class="img-team" src="./images/JPG(3).jpg" alt="хлопець в окулярах" width="270" />
             <h3 class="team-name">Михайло Єрмаков</h3>
             <p class="team-profession">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer-item">
+      <div class="container">
       <a class="text-decorationnone" href="./index.html"
         ><span class="footer-logo">Web</span><span class="footer-logo1">Studio</span></a
       >
@@ -128,6 +144,7 @@
           <li><a class="contact-item text-decorationnone" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

@@ -11,6 +11,14 @@
   --primery-team-color: #f5f4fa;
   --primery-background-color: #2f303a;
 }
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
@@ -20,9 +28,61 @@ body {
   text-decoration: none;
  
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  margin-bottom: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  outline: 2px solid tomato;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+  
+}
+.header-nav .header-item {
+  margin-left: 50px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .list-stylenone {
+  display: flex;
   font-style: normal;
   list-style: none;
+}
+.list-stylenone .product-img + .product-img{
+  margin-left: 30px;
 }
 .text-decorationnone{
     font-family: var(--secondary-font);
@@ -31,6 +91,8 @@ body {
       letter-spacing: 0.03em;
       font-weight: 700;
   text-decoration: none;
+  margin-bottom: 25px;
+  margin-top: 24px;
 }
 
 .header-logo {
@@ -50,7 +112,9 @@ body {
   color: var(--primery-white-color);
 }
 
+
 .header {
+
   color: var(--primery-white-color);
 }
 
@@ -73,7 +137,18 @@ body {
   color: var(--accent-color);
 }
 
+
+
+.contact{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+
 .contact .contact-item{
+  
+  margin-left: 50px;
   font-weight: 500;
 }
 
@@ -90,33 +165,55 @@ body {
 .contact-item:focus {
   color: var(--accent-color)
 }
+.button-item:hover,
+.button-item:focus{
+  color: #188CE8;
+}
+
 
 .button-item {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  margin: 0 auto;
-  display: block;
   background-color: var(--accent-color);
   color: var(--primery-white-color);
+  
+  
 }
 .hero-item {
+    
+      
+      text-align: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
 background: var(--primery-background-color)
   
 }
 .hero-text {
+  max-width: 696px;
+  height: 120px;
 font-family: var(--main-font);
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
+margin: 0 auto;
+margin-bottom: 30px;
 text-transform: uppercase;
 text-align: center;
 color: var(--primery-white-color)
 
 }
+
+
+
 .benefits-title {
+  margin-bottom: 10px;
+  outline: 2px solid tomato;
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 700;
@@ -125,6 +222,7 @@ color: var(--primery-white-color)
   color: var(--primery-title-color)
 }
 .benefits-text {
+  display: flex;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -135,6 +233,10 @@ color: var(--primery-white-color)
   display: none;
 }
 .images-title {
+  padding-bottom: 50px;
+  
+  padding-top: 0px;
+  text-align: center;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
@@ -142,10 +244,21 @@ color: var(--primery-white-color)
   letter-spacing: 0.03em;
   color: var(--primery-title-color)
 }
+
+
 .team-background{
  background-color:  var(--primery-team-color)
 }
+.img-team{
+  padding-left: 30px;
+}
+.team-color{
+  background-color: #ffffff;
+}
+
 .team {
+  padding-bottom: 50px;
+  text-align: center;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
@@ -154,6 +267,9 @@ color: var(--primery-white-color)
   color: var(--primery-title-color)
 }
 .team-name {
+  padding-top: 30px;
+  background-color: #ffffff;
+  text-align: center;
   font-family: var(--main-font);
   font-weight: 500;
   font-style: normal;
@@ -164,12 +280,15 @@ color: var(--primery-white-color)
 
 }
 .team-profession {
+  padding-top: 10px;
+  padding-bottom: 30px;
   font-family: var(--main-font);
-  
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: var(--primery-text-color)
+  color: var(--primery-text-color);
+  background-color: #ffffff;
 }
 .footer-item {
   background-color: var(--primery-background-color);
