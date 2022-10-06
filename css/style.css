@@ -58,7 +58,7 @@ section{
   align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
-  outline: 2px solid tomato;
+  
 }
 .header-nav{
   display: flex;
@@ -76,6 +76,17 @@ section{
   margin-left: auto;
   margin-right: auto;
 }
+.list-footer{
+  display: block;
+  font-style: normal;
+    list-style: none;
+}
+.footer-mail{
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+
 .list-stylenone {
   display: flex;
   font-style: normal;
@@ -84,15 +95,27 @@ section{
 .list-stylenone .product-img + .product-img{
   margin-left: 30px;
 }
+
+.address-map .footer-mail .footer-tel{
+  margin-bottom: 9px;
+}
+
 .text-decorationnone{
+  
     font-family: var(--secondary-font);
       font-size: 26px;
       line-height: 1.19;
       letter-spacing: 0.03em;
       font-weight: 700;
-  text-decoration: none;
-  margin-bottom: 25px;
-  margin-top: 24px;
+  
+}
+.address-item .address-logo{
+  padding-top: 20px;
+  
+}
+.address-item{
+  padding-top: 60px;
+  
 }
 
 .header-logo {
@@ -104,10 +127,12 @@ section{
   color: #000000;
 }
 .footer-logo {
+ 
 
   color: var(--accent-color);
 }
 .footer-logo1 {
+  
 
   color: var(--primery-white-color);
 }
@@ -136,7 +161,6 @@ section{
   
   color: var(--accent-color);
 }
-
 
 
 .contact{
@@ -213,7 +237,6 @@ color: var(--primery-white-color)
 
 .benefits-title {
   margin-bottom: 10px;
-  outline: 2px solid tomato;
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 700;
@@ -252,11 +275,10 @@ color: var(--primery-white-color)
 .img-team{
   padding-left: 30px;
 }
-.team-color{
-  background-color: #ffffff;
-}
+
 
 .team {
+  
   padding-bottom: 50px;
   text-align: center;
   font-family: var(--main-font);
@@ -267,6 +289,7 @@ color: var(--primery-white-color)
   color: var(--primery-title-color)
 }
 .team-name {
+  margin-left: 30px;
   padding-top: 30px;
   background-color: #ffffff;
   text-align: center;
@@ -280,6 +303,8 @@ color: var(--primery-white-color)
 
 }
 .team-profession {
+  margin-left: 30px;
+  padding-left: 0px;
   padding-top: 10px;
   padding-bottom: 30px;
   font-family: var(--main-font);
@@ -291,9 +316,11 @@ color: var(--primery-white-color)
   background-color: #ffffff;
 }
 .footer-item {
+  height: 252px;
   background-color: var(--primery-background-color);
 }
 .footer-address {
+  margin-bottom: 9px;
     font-family: var(--main-font);
     font-weight: 400;
       font-size: 14px;
@@ -314,6 +341,19 @@ color: var(--primery-white-color)
       line-height: 1.62;
       letter-spacing: 0.03em;
       cursor: pointer;
+      
+}
+.img-section1{
+  display: flex;
+}
+.butt-portfolio{
+  
+  text-align: center;
+  align-items: center;
+}
+.img-portfolio{
+  
+  
 }
 .projects-name {
   font-family: var(--main-font);
