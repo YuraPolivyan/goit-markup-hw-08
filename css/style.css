@@ -366,6 +366,8 @@ section {
   padding-top: 20px;
   line-height: 2;
   letter-spacing: 0.06em;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .projects-text {
   font-family: var(--main-font);
@@ -376,4 +378,7 @@ section {
   color: var(--primery-text-color);
   padding-bottom: 20px;
   padding-top: 4px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
