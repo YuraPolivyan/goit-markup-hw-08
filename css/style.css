@@ -315,6 +315,7 @@ section {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .butt-portfolio {
