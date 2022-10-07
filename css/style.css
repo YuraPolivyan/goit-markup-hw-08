@@ -348,9 +348,32 @@ section {
   margin-bottom: 50px;
 }
 
-.portfo-img {
-  padding-right: 50px;
-}
 .img-portfolio {
   display: flex;
+  flex-wrap: wrap;
+}
+.img-portfolio .portfolio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.img-portfolio .portfolio-card:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
+}
+.projects-name {
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primery-title-color);
+  padding-top: 20px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects-text {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+  padding-bottom: 20px;
+  padding-top: 4px;
 }
