@@ -41,6 +41,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* section { */
 .section {
   padding-top: 94px;
@@ -232,9 +244,7 @@ ul {
 .benefits-item:last-child {
   margin-right: 0px;
 }
-.benefits-h2 {
-  display: none;
-}
+
 .images-title {
   margin-bottom: 50px;
   padding-top: 0px;
@@ -345,14 +355,6 @@ ul {
   border: #757575;
 }
 
-.projects-name {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--primery-title-color);
-}
 .projects-text {
   font-family: var(--main-font);
 
@@ -380,12 +382,9 @@ ul {
   font-size: 18px;
   font-weight: 700;
   color: var(--primery-title-color);
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-bottom: 4px;
   line-height: 2;
   letter-spacing: 0.06em;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 .projects-text {
   font-family: var(--main-font);
@@ -394,10 +393,8 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
-  padding-bottom: 20px;
-  padding-top: 4px;
-  padding-left: 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+}
+.portfolio-item {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
