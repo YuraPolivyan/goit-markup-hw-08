@@ -400,3 +400,6 @@ ul {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+.address-item .text-decorationnone {
+  margin-right: 0px;
+}
