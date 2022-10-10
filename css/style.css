@@ -115,7 +115,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-weight: 700;
-  margin-right: 90px;
+  margin-right: 93px;
 }
 .address-item .address-logo {
   margin-top: 20px;
@@ -247,7 +247,7 @@ ul {
 
 .images-title {
   margin-bottom: 50px;
-  padding-top: 0px;
+
   text-align: center;
   font-family: var(--main-font);
   font-weight: 700;
@@ -396,5 +396,7 @@ ul {
 }
 .portfolio-item {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
