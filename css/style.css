@@ -240,6 +240,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--primery-title-color);
+  text-transform: uppercase;
 }
 .benefits-text {
   font-family: var(--main-font);
@@ -254,11 +255,11 @@ ul {
 .benefits-item:last-child {
   margin-right: 0px;
 }
-.benefits-item::before {
-  display: block;
-  content: '';
-  width: 270px;
+.benefits-conteiner {
+  display: flex;
   height: 120px;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primery-team-color);
   margin-bottom: 30px;
   border-radius: 4px;
@@ -295,7 +296,7 @@ ul {
 }
 .envelope-icon:hover,
 .envelope-icon:focus {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 
 .icon-item {
@@ -303,6 +304,7 @@ ul {
   justify-content: center;
   gap: 10px;
 }
+
 .icon-log {
   border-radius: 50%;
   width: 44px;
@@ -323,7 +325,7 @@ ul {
 }
 .icon-log:hover,
 .icon-log:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 .foot-item {
   display: flex;
@@ -348,7 +350,7 @@ ul {
 }
 .foot-link:hover,
 .foot-link:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 .use-foot {
   fill: var(--primery-white-color);
@@ -370,6 +372,52 @@ ul {
 }
 .box {
   margin-left: 70px;
+}
+.parmanent {
+  justify-content: center;
+  align-items: center;
+}
+.parmanent-box {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.parmanent-box:hover,
+.parmanent-box:focus {
+  border-color: var(--accent-color);
+}
+
+.parmanent-item {
+  display: flex;
+  gap: 30px;
+}
+
+.parmanent-link {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.parmanent-link {
+  fill: #afb1b8;
+}
+.parmanent-link:hover,
+.parmanent-link:focus {
+  fill: var(--accent-color);
+}
+.dop-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primery-title-color);
+  margin-bottom: 50px;
 }
 
 .team {
@@ -456,6 +504,11 @@ ul {
   padding: 6px 22px;
   border: #757575;
 }
+.butt-one:hover,
+.butt-one:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .projects-text {
   font-family: var(--main-font);
@@ -504,4 +557,9 @@ ul {
 }
 .address-item .text-decorationnone {
   margin-right: 0px;
+}
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
