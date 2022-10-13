@@ -186,6 +186,7 @@ ul {
 .contact-item:focus {
   color: var(--accent-color);
 }
+
 .button-item:hover,
 .button-item:focus {
   color: #188ce8;
@@ -204,8 +205,17 @@ ul {
 }
 .hero-item {
   text-align: center;
-
-  background: var(--primery-background-color);
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--primery-background-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/team1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero-text {
   max-width: 696px;
@@ -244,6 +254,15 @@ ul {
 .benefits-item:last-child {
   margin-right: 0px;
 }
+.benefits-item::before {
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-color: var(--primery-team-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
 
 .images-title {
   margin-bottom: 50px;
@@ -269,6 +288,88 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.envelope-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.envelope-icon:hover,
+.envelope-icon:focus {
+  fill: #2196f3;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.icon-log {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.icon-link {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.use-icon {
+  fill: #afb1b8;
+}
+.icon-log:hover,
+.icon-log:focus {
+  background-color: #2196f3;
+}
+.foot-item {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.foot-log {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.foot-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.foot-link:hover,
+.foot-link:focus {
+  background-color: #2196f3;
+}
+.use-foot {
+  fill: var(--primery-white-color);
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.foot-text {
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+.footer-container {
+  display: flex;
+}
+.box {
+  margin-left: 70px;
 }
 
 .team {
@@ -303,6 +404,7 @@ ul {
   color: var(--primery-text-color);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 16px;
 }
 .team-div {
   margin-top: 30px;
