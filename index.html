@@ -50,7 +50,7 @@
         <div class="container">
           
         <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button-item">Замовити послугу</button>
+        <button data-modal-open type="button" class="button-item">Замовити послугу</button>
         </div>
       </section>
 
@@ -115,16 +115,22 @@
             
             <img src="./images/img.jpg" alt="руки на клавіатурі" width="370" />
             <div class="product-description">
-              <p class="product-text">Десктопные приложения</p>
+              <p class="product-text">Десктопні додатки</p>
             </div>
           </li>
 
           <li class="product-img">
             <img src="./images/img1.jpg" alt="компьютер та телефон" width="370" />
+            <div class="product-description">
+              <p class="product-text">Мобільні додатки</p>
+            </div>
           </li>
 
           <li class="product-img">
             <img src="./images/img2.jpg" alt="ручка та планшет" width="370" />
+            <div class="product-description">
+              <p class="product-text">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
         </div>
@@ -348,5 +354,16 @@
       </ul></div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-modal" data-modal-close>
+        <svg class="modal-svg" width="11" height="11">
+          <use href="./images/krestik.svg#icon-krestik">
+          </use>
+          </button>
+        </svg>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
