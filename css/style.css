@@ -70,6 +70,20 @@ ul {
   left: 0;
   background-color: var(--primery-white-color);
 }
+.header-link {
+  position: relative;
+}
+.header-link:hover::after {
+  content: '';
+  width: 100%;
+  background-color: var(--accent-color);
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -32px;
+  border-radius: 2px;
+}
 .header-container {
   display: flex;
   align-items: center;
