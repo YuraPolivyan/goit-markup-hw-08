@@ -74,25 +74,33 @@ ul {
   position: relative;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
-.header-link::after {
+.header-link {
+  padding-bottom: 33px;
+}
+.header-link.is-active {
+  color: var(--accent-color);
+}
+.header-link.is-active::after {
   position: absolute;
   content: '';
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
-  bottom: calc(0% - 32px);
+  bottom: -1px;
   left: 0;
   height: 4px;
   pointer-events: none;
   display: block;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 .header-link:hover::after,
 .header-link:focus::after {
   background-color: var(--accent-color);
-  border-radius: 2px;
 }
 .header-container {
   display: flex;
