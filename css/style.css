@@ -357,8 +357,8 @@ ul {
   fill: var(--icons-gray);
   transition: fill var(--animation);
 }
-.icon-log:hover svg,
-.icon-log:focus svg {
+.icon-link:hover svg,
+.icon-link:focus svg {
   fill: var(--primery-white-color);
 }
 
