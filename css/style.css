@@ -72,6 +72,7 @@ ul {
   top: 0;
   left: 0;
   background-color: var(--primery-white-color);
+  z-index: 1;
 }
 .header-link {
   display: block;
