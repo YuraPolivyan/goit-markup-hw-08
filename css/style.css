@@ -839,7 +839,13 @@ ul {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
-
+.name-text {
+  font-family: var(--main-font);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primery-text-color);
+}
 .form-fild {
   display: flex;
   flex-direction: column;
@@ -847,8 +853,10 @@ ul {
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 10px;
+  transition: border-color var(--animation);
 }
-.form-fild:hover input {
+.form-fild:hover input,
+.form-fild:focus input {
   border-color: #2196f3;
 }
 .form-fild input {
@@ -864,9 +872,12 @@ ul {
   position: absolute;
   top: 50%;
   left: 12px;
+  transition: fill var(--animation);
 }
-.modal-icon:hover {
+.modal-icon:hover,
+.modal-icon:focus {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 .form-fild textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -887,13 +898,33 @@ ul {
   position: absolute;
   appearance: none;
 }
+.modal-check {
+  appearance: none;
+  -moz-appearance: none;
+}
 .form-input:hover ~ .modal-icon,
 .form-input:focus ~ .modal-icon {
   fill: var(--accent-color);
   color: #2196f3;
   transition: var(--animation);
 }
-.field-textarea:hover {
+.form-input {
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color var(--animation);
+}
+.field-textarea {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--animation);
+}
+.field-textarea:hover,
+.field-textarea:focus {
   border-color: var(--accent-color);
 }
 .check-link {
