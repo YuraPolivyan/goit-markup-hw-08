@@ -927,6 +927,10 @@ ul {
 .field-textarea:focus {
   border-color: var(--accent-color);
 }
+.field-textarea::placeholder {
+  padding-left: 16px;
+  padding-top: 12px;
+}
 .check-link {
   text-decoration: underline;
   color: var(--accent-color);
