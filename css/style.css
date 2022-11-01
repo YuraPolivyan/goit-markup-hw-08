@@ -159,6 +159,9 @@ ul {
   font-weight: 700;
   margin-right: 93px;
 }
+.address-item {
+  flex-grow: 1;
+}
 .address-item .address-logo {
   margin-top: 20px;
 }
@@ -204,7 +207,6 @@ ul {
   margin-left: 70px;
 }
 .footer-icons-title {
-  margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--primery-white-color);
   font-weight: 700;
@@ -241,7 +243,7 @@ ul {
   transition: background-color var(--animation);
 }
 .footer-mailing {
-  margin-left: auto;
+  margin-left: 93px;
 }
 
 .mailing-container {
@@ -322,7 +324,7 @@ ul {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   transition: color var(--animation);
   color: var(--primery-text-color);
@@ -783,6 +785,7 @@ ul {
   color: var(--primery-white-color);
 }
 .backdrop {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -796,7 +799,7 @@ ul {
 }
 .modal {
   position: absolute;
-
+  padding: 40px;
   width: 528px;
 
   transition: var(--animation);
@@ -823,6 +826,11 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.button-modal:hover,
+.button-modal:focus {
+  fill: var(--accent-color);
+}
+
 .modal-text {
   font-family: var(--main-font);
   font-weight: 700;
@@ -831,7 +839,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primery-title-color);
   text-align: center;
-  margin-top: 40px;
+
   margin-bottom: 12px;
 }
 .modal-svg:hover,
@@ -850,35 +858,29 @@ ul {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-bottom: 10px;
+
   transition: border-color var(--animation);
 }
-.form-fild:hover input,
-.form-fild:focus input {
-  border-color: #2196f3;
-}
+
 .form-fild input {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
 }
+
 .form-fild label {
   margin-bottom: 4px;
 }
+
 .modal-icon {
   position: absolute;
   top: 50%;
   left: 12px;
   transition: fill var(--animation);
 }
-.modal-icon:hover,
-.modal-icon:focus {
-  fill: var(--accent-color);
-  cursor: pointer;
-}
+
 .form-fild textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -886,13 +888,21 @@ ul {
   height: 120px;
   cursor: pointer;
 }
+
 .check-icon {
+  opacity: 1;
   position: relative;
   display: inline-block;
   margin-right: 8px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
+  cursor: pointer;
+}
+
+.check-icon:hover,
+.check-icon:focus {
+  opacity: 1;
 }
 .modal-check-icon {
   position: absolute;
@@ -902,11 +912,34 @@ ul {
   appearance: none;
   -moz-appearance: none;
 }
-.form-input:hover ~ .modal-icon,
-.form-input:focus ~ .modal-icon {
-  fill: var(--accent-color);
-  color: #2196f3;
-  transition: var(--animation);
+.checkbox-label {
+  position: relative;
+  padding-left: 28px;
+}
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 2px solid var(--primery-title-color);
+  content: '';
+}
+.checkbox-label::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  border: 2px solid var(--primery-title-color);
+  content: '';
+  background-image: url(../images/icon\ check1.svg);
+  opacity: 0;
+}
+.checkbox-opacity:checked + .checkbox-label::after {
+  opacity: 1;
 }
 .form-input {
   padding-left: 42px;
@@ -922,7 +955,9 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--animation);
+  outline: none;
 }
+
 .field-textarea:hover,
 .field-textarea:focus {
   border-color: var(--accent-color);
@@ -936,8 +971,9 @@ ul {
   color: var(--accent-color);
 }
 .form-button-submit {
+  display: block;
   margin-top: 30px;
-  margin-bottom: 40px;
+  display: block;
   padding: 10px 55px;
   font-weight: 700;
   font-size: 16px;
@@ -950,8 +986,8 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;
-  margin-left: 164px;
-  margin-right: 164px;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 0.06em;
 }
 .form-checkbox {
@@ -960,10 +996,20 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
 .modal-text-p {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+.form-input:focus ~ .modal-icon,
+.form-input:hover ~ .modal-icon {
+  fill: var(--accent-color);
+  color: var(--accent-color);
 }
