@@ -1,0 +1,16 @@
+:root {
+    /* Основные шрифты */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* Основные цвета */
+    --primery-text-color: #757575;
+    --primery-white-color: #ffffff;
+    --primery-title-color: #212121;
+    --accent-color: #2196f3;
+    --primery-team-color: #f5f4fa;
+    --primery-background-color: #2f303a;
+    --icons-gray: rgba(175, 177, 184, 1);
+    --icons-footer: rgba(255, 255, 255, 0.1);
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
