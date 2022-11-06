@@ -1,0 +1,40 @@
+.list-stylenone {
+    display: flex;
+    font-style: normal;
+    list-style: none;
+  }
+  .list-stylenone .product-img + .product-img {
+    margin-left: 30px;
+  }
+  .benefits-item {
+    margin-right: 30px;
+  }
+  .benefits-item:last-child {
+    margin-right: 0px;
+  }
+  .benefits-conteiner {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primery-team-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  .benefits-title {
+    margin-bottom: 10px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--primery-title-color);
+    text-transform: uppercase;
+  }
+  .benefits-text {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primery-text-color);
+  }
