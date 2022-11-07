@@ -12,8 +12,8 @@
     position: relative;
     transition: color var(--animation);
 
-    &header-link:hover,
-    &header-link:focus{
+    &:hover,
+    &:focus{
         color: var(--accent-color);
     }
 }
