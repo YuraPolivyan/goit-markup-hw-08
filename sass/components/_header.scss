@@ -99,3 +99,44 @@
 .header-link:focus{
     color: var(--accent-color);
 }
+.contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contact .contact-link {
+    margin-left: 50px;
+  }
+  
+  .contact .contact-item {
+    font-weight: 500;
+  }
+  .contact-link:first-child {
+    margin-left: 0px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+    transition: color var(--animation);
+    color: var(--primery-text-color);
+  }
+  
+  .contact-item:hover,
+  .contact-item:focus {
+    color: var(--accent-color);
+  }
+  .envelope-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--animation);
+  }
+  .envelope-icon:hover,
+  .envelope-icon:focus {
+    fill: var(--accent-color);
+  }
