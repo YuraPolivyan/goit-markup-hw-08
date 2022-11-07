@@ -59,6 +59,23 @@
   resize: none;
   height: 120px;
   cursor: pointer;
+  
+}
+.field-textarea {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--animation);
+  outline: none;
+}
+
+.field-textarea:hover,
+.field-textarea:focus {
+  border-color: var(--accent-color);
+}
+.field-textarea::placeholder {
+  padding-left: 16px;
+  padding-top: 12px;
 }
 .name-text {
   font-family: var(--main-font);
