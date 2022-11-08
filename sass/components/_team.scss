@@ -1,7 +1,7 @@
-.team-background {
+.team {
     background-color: var(--primery-team-color);
   }
-  .team {
+  .team__title {
     margin-bottom: 50px;
     text-align: center;
     font-family: var(--main-font);
@@ -19,21 +19,21 @@
   .list-stylenone .product-img + .product-img {
     margin-left: 30px;
   }
-  .img-ul .img-team:first-child {
+  .team__img-ul .team__img:first-child {
     margin-left: 0px;
   }
-  .img-team {
+  .team__img {
     background-color: #ffffff;
     margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .team-div {
+  .team__div {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .team-name {
+  .team__name {
     margin-bottom: 10px;
     background-color: #ffffff;
     text-align: center;
@@ -45,7 +45,7 @@
     letter-spacing: 0.03em;
     color: var(--primery-title-color);
   }
-  .team-profession {
+  .team__profession {
     font-family: var(--main-font);
     text-align: center;
     font-size: 16px;
@@ -56,25 +56,25 @@
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 16px;
   }
-  .icon-item {
+  .team__icon-item {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
-  .icon-log {
+  .team__icon-log {
     width: 44px;
     height: 44px;
   }
-  .icon-log svg {
+  .team__icon-log svg {
     fill: var(--icons-gray);
     transition: fill var(--animation);
   }
-  .icon-link:hover svg,
-.icon-link:focus svg {
+  .team__icon-link:hover svg,
+.team__icon-link:focus svg {
   fill: var(--primery-white-color);
 }
 
-.icon-link {
+.team__icon-link {
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -83,7 +83,7 @@
   height: 100%;
   transition: background-color var(--animation), fill var(--animation);
 }
-.icon-link:hover,
-.icon-link:focus {
+.team__icon-link:hover,
+.team__icon-link:focus {
   background-color: var(--accent-color);
 }
