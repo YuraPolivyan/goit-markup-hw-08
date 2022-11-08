@@ -1152,7 +1152,7 @@ ul {
   border: #757575;
 }
 
-.img-portfolio {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1160,43 +1160,43 @@ ul {
       flex-wrap: wrap;
 }
 
-.img-portfolio .portfolio-card:not(:nth-child(3n)) {
+.card .card__portfolio-card:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.img-portfolio .portfolio-card:not(:nth-child(n+7)) {
+.card .card__portfolio-card:not(:nth-child(n+7)) {
   margin-bottom: 30px;
 }
 
-.card-link {
+.card__link {
   display: block;
 }
 
-.card-link:hover,
-.card-link:focus {
+.card__link:hover,
+.card__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-link {
+.card__link {
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
 }
 
-.card-link:hover .pages-img::before,
-.card-link:focus .pages-img::before {
+.card__link:hover .card__pages-img::before,
+.card__link:focus .card__pages-img::before {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.pages-img {
+.card__pages-img {
   position: relative;
   overflow: hidden;
 }
 
-.pages-img::before {
+.card__pages-img::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -1210,7 +1210,7 @@ ul {
   transition: transform var(--animation), -webkit-transform var(--animation);
 }
 
-.pages {
+.card__pages {
   top: 0;
   left: 0;
   position: absolute;
@@ -1227,27 +1227,27 @@ ul {
   transition: transform var(--animation), -webkit-transform var(--animation);
 }
 
-.card-link:hover .pages,
-.card-link:focus .pages {
+.card__link:hover .card__pages,
+.card__link:focus .card__pages {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.pages-text {
+.card__pages-text {
   font-size: 18px;
   line-height: 1.55;
   color: var(--primery-white-color);
 }
 
-.portfolio-item {
+.card__portfolio-item {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.projects-name {
+.card__projects-name {
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 700;
@@ -1257,7 +1257,7 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.projects-text {
+.card__projects-text {
   font-family: var(--main-font);
   font-size: 16px;
   font-weight: 400;
