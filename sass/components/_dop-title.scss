@@ -12,15 +12,15 @@
     justify-content: center;
     align-items: center;
   }
-  .parmanent-item {
+  .parmanent__item {
     display: flex;
     gap: 30px;
   }
-  .parmanent-box {
+  .parmanent__box {
   width: 170px;
   height: 92px;
 }
-.parmanent-link {
+.parmanent__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,14 +30,14 @@
     border-radius: 4px;
     transition: border-color var(--animation), fill var(--animation);
   }
-  .parmanent-link:hover,
-  .parmanent-link:focus {
+  .parmanent__link:hover,
+  .parmanent__link:focus {
     border-color: var(--accent-color);
   }
-  .parmanent-link {
+  .parmanent__link {
     fill: #afb1b8;
   }
-  .parmanent-link:hover,
-  .parmanent-link:focus {
+  .parmanent__link:hover,
+  .parmanent__link:focus {
     fill: var(--accent-color);
   }
