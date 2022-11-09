@@ -217,9 +217,7 @@ ul {
   transition: color var(--animation);
   color: var(--primery-text-color);
 }
-
-.contact__item:hover,
-.contact__item:focus {
+.contact__item:hover, .contact__item:focus {
   color: var(--accent-color);
 }
 
@@ -229,9 +227,7 @@ ul {
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
-
-.contact__icon:hover,
-.contact__icon:focus {
+.contact__icon:hover, .contact__icon:focus {
   fill: var(--accent-color);
 }
 

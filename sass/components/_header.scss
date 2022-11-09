@@ -119,18 +119,22 @@
     letter-spacing: 0.02em;
     transition: color var(--animation);
     color: var(--primery-text-color);
-  }
-  
-  .contact__item:hover,
-  .contact__item:focus {
+    
+    &:hover,
+  &:focus {
     color: var(--accent-color);
   }
+
+  }
+  
   .contact__icon {
     margin-right: 10px;
     fill: currentColor;
     transition: fill var(--animation);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
-  .contact__icon:hover,
-  .contact__icon:focus {
-    fill: var(--accent-color);
-  }
+  
