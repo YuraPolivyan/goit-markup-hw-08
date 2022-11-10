@@ -87,12 +87,14 @@
     letter-spacing: 0.02em;
     color: var(--primery-title-color);
     transition: color var(--animation);
-}
 
-.header-nav__link:hover,
-.header-nav__link:focus{
+    &:hover,
+&:focus{
     color: var(--accent-color);
 }
+}
+
+
 .contact {
     display: flex;
     align-items: center;
