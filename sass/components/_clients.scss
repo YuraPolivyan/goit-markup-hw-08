@@ -1,4 +1,4 @@
-.dop-title {
+.section__title {
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
@@ -8,19 +8,16 @@
     color: var(--primery-title-color);
     margin-bottom: 50px;
   }
-  .parmanent {
-    justify-content: center;
-    align-items: center;
-  }
-  .parmanent__item {
+ 
+  .clients {
     display: flex;
     gap: 30px;
   }
-  .parmanent__box {
+  .clients__item {
   width: 170px;
   height: 92px;
 }
-.parmanent__link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,15 +26,20 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border-color var(--animation), fill var(--animation);
-  }
-  .parmanent__link:hover,
-  .parmanent__link:focus {
-    border-color: var(--accent-color);
-  }
-  .parmanent__link {
     fill: #afb1b8;
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+
+   
   }
-  .parmanent__link:hover,
-  .parmanent__link:focus {
-    fill: var(--accent-color);
-  }
+
+  
+  
+ 

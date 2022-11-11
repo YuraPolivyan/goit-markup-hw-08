@@ -1,7 +1,11 @@
 .portfolio {
+     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+   
   }
+  
+ 
   .portfolio__one:not(:last-child) {
   margin-right: 8px;
 }
