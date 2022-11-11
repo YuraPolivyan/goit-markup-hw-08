@@ -45,12 +45,14 @@
 }
 .footer__address-map {
     transition: color var(--animation);
-}
 
-.footer__address-map:hover,
-.footer__address-map:focus {
+    &:hover,
+&:focus {
     color: var(--accent-color);
 }
+}
+
+
 .footer__mail {
     margin-top: 9px;
     margin-bottom: 9px;
@@ -66,6 +68,11 @@
     letter-spacing: 0.02em;
     transition: color var(--animation);
     color: var(--primery-text-color);
+
+    &:hover,
+&:focus {
+    color: var(--accent-color);
+}
 }
 
 .footer__contact-item:hover,
@@ -78,24 +85,24 @@
 .box {
     margin-left: 70px;
 }
-.footer__foot-text {
+.box__text {
     font-style: normal;
     text-transform: uppercase;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 20px;
 }
-.footer__foot-item {
+.network {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.footer__foot-log {
+.network__item {
     border-radius: 50%;
     width: 44px;
     height: 44px;
 }
-.footer__foot-link {
+.network__link {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -104,13 +111,15 @@
     width: 100%;
     height: 100%;
     transition: background-color var(--animation);
-}
 
-.footer__foot-link:hover,
-.footer__foot-link:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
 }
-.footer__use-foot {
+}
+
+
+.network__icon {
     fill: var(--primery-white-color);
 }
 .footer__mailing {
@@ -171,10 +180,7 @@
 .footer__mailing-icons {
     fill: currentColor;
 }
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-  background-color: var(--accent-color);
-}
+
 
 .footer-icon-link {
   border-radius: 50%;
@@ -186,4 +192,9 @@
   height: 100%;
 
   transition: background-color var(--animation);
+
+  &:hover,
+&:focus {
+  background-color: var(--accent-color);
+}
 }
