@@ -15,22 +15,13 @@
 .footer__address-item .footer__address {
     margin-top: 20px;
 }
-.text-decorationnone {
-    font-family: var(--secondary-font);
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    margin-right: 93px;
-}
-.footer__address-item .text-decorationnone {
+
+.footer__address-item  {
     margin-right: 0px;
 }
-.footer__logo {
-    color: var(--accent-color);
-}
 
-.footer__logo1 {
+
+.logo__white {
     color: var(--primery-white-color);
 }
 
@@ -38,6 +29,7 @@
     display: block;
     font-style: normal;
     list-style: none;
+    margin-top: 20px;
 }
 .footer__map .footer__mail .footer__tel {
     margin-bottom: 9px;

@@ -1,7 +1,7 @@
-.team {
+.section-background {
     background-color: var(--primery-team-color);
   }
-  .team__title {
+  .section-background__title {
     margin-bottom: 50px;
     text-align: center;
     font-family: var(--main-font);
@@ -11,29 +11,27 @@
     letter-spacing: 0.03em;
     color: var(--primery-title-color);
   }
-  .list-stylenone {
+  .team{
     display: flex;
     font-style: normal;
     list-style: none;
   }
-  .list-stylenone .product-img + .product-img {
-    margin-left: 30px;
-  }
-  .team__img-ul .team__img:first-child {
+ 
+  .team .team__item:first-child {
     margin-left: 0px;
   }
-  .team__img {
+  .team__item {
     background-color: #ffffff;
     margin-left: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .team__div {
+  .team__box {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .team__name {
+  .team__title {
     margin-bottom: 10px;
     background-color: #ffffff;
     text-align: center;

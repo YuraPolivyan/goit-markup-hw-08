@@ -96,16 +96,18 @@
   transition: border-color var(--animation);
 
   &:hover,
-&:focus {
+  &:focus {
   border-color: var(--accent-color);
 }
-}
 
-.form__input:focus ~ .form__modal-icon,
-.form__input:hover ~ .form__modal-icon {
+&:focus ~ .form__modal-icon,
+&:hover ~ .form__modal-icon {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
+}
+
+
 .form__modal-icon {
   position: absolute;
   top: 50%;
@@ -202,9 +204,9 @@
       fill: var(--accent-color);
     }
   }
- 
- 
-  .form__modal-svg:hover,
+  
+
+.form__modal-svg:hover,
 .form__modal-svg:focus {
   fill: var(--accent-color);
   transition: fill var(--animation);

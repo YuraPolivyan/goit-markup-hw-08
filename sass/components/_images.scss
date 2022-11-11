@@ -1,7 +1,5 @@
-.images {
-    padding-top: 0px;
-  }
-  .images__title {
+
+  .section__title {
     margin-bottom: 50px;
   
     text-align: center;
@@ -12,10 +10,15 @@
     letter-spacing: 0.03em;
     color: var(--primery-title-color);
   }
-  .product__img {
+  .product{
+    display: flex;
+    font-style: normal;
+    list-style: none;
+  }
+  .product__item {
     position: relative;
   }
-  .list-stylenone .product__img + .product__img {
+  .product .product__item + .product__item {
     margin-left: 30px;
   }
   .product__description {
