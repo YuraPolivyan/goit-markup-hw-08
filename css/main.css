@@ -699,7 +699,7 @@ section {
   color: var(--primery-title-color);
 }
 
-.team__profession {
+.team__text {
   font-family: var(--main-font);
   text-align: center;
   font-size: 16px;
@@ -711,7 +711,7 @@ section {
   margin-bottom: 16px;
 }
 
-.team__icon-item {
+.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,23 +721,18 @@ section {
   gap: 10px;
 }
 
-.team__icon-log {
+.social__item {
   width: 44px;
   height: 44px;
 }
 
-.team__icon-log svg {
+.social__item svg {
   fill: var(--icons-gray);
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
 
-.team__icon-link:hover svg,
-.team__icon-link:focus svg {
-  fill: var(--primery-white-color);
-}
-
-.team__icon-link {
+.social__link {
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,10 +748,11 @@ section {
   -webkit-transition: background-color var(--animation), fill var(--animation);
   transition: background-color var(--animation), fill var(--animation);
 }
-
-.team__icon-link:hover,
-.team__icon-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
+}
+.social__link:hover svg, .social__link:focus svg {
+  fill: var(--primery-white-color);
 }
 
 .dop-title {
