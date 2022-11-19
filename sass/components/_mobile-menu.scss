@@ -6,9 +6,10 @@
     display: none;
     width: 100%;
     height: 100%;
-    background-color: var(--primery-title-color);
-    padding: 40px;
+    background-color: var(--primery-white-color);
+    
     z-index: 1;
+    
 
     &.is-open{
         transform: translateX(0);
@@ -17,6 +18,10 @@
     &__close{
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 15px;
     }
+
+        
 }
+
+
