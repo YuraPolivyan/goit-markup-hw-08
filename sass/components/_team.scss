@@ -14,30 +14,29 @@
 
 
 
-@media screen and(min-width:768px) {
+
+.team {
+   
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
   
-
-  .team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-
+        &__item {
+          width: 354px;
+          margin-bottom: 0;
+        }
+      }
   
-}
-@media screen and(min-width:1200px) {
-  .team {
-    flex-wrap: nowrap;
-
-    
-  }
-
+      @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+      }
     
 }
 .team.team__item:first-child {
   margin-left: 0px;
 }
-  
+
     
       
  
