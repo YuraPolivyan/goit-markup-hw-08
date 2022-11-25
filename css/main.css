@@ -155,8 +155,18 @@ section {
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-weight: 700;
-  margin-right: 93px;
   color: var(--accent-color);
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__dark {
@@ -736,7 +746,6 @@ section {
 
 .team__item {
   background-color: #ffffff;
-  margin-left: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -832,25 +841,32 @@ section {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-}
-@media screen and (max-width: 480px) {
-  .clients {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 768px) {
-  .clients {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients__item {
   width: 170px;
   height: 92px;
+}
+@media screen and (min-width: 480px) {
+  .clients__item {
+    width: 210px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .clients__link {
@@ -1159,6 +1175,42 @@ section {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+@media screen and (min-width: 767px) {
+  .footer__container {
+    padding-left: 75px;
+    padding-right: 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .address-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 
 .footer__address-item {
   -webkit-box-flex: 1;
@@ -1211,6 +1263,13 @@ section {
   margin-top: 9px;
   margin-bottom: 9px;
 }
+@media screen and (max-width: 768px) {
+  .footer__mail {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+}
 
 .footer__contact-item {
   display: -webkit-box;
@@ -1243,6 +1302,12 @@ section {
 
 .box {
   margin-left: 70px;
+}
+@media screen and (max-width: 768px) {
+  .box {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 .box__text {
@@ -1297,6 +1362,12 @@ section {
 .footer__mailing {
   margin-left: 93px;
 }
+@media screen and (max-width: 768px) {
+  .footer__mailing {
+    margin-left: 0;
+    text-align: center;
+  }
+}
 
 .footer__mailing input {
   width: 358px;
@@ -1306,6 +1377,11 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--primery-white-color);
+}
+@media screen and (max-width: 1200px) {
+  .footer__mailing input {
+    width: 450px;
+  }
 }
 
 .footer__mailing input::-webkit-input-placeholder {
@@ -1343,12 +1419,28 @@ section {
   color: var(--primery-white-color);
   font-weight: 700;
 }
+@media screen and (max-width: 1200px) {
+  .footer__icons-title {
+    margin-bottom: 20px;
+  }
+}
 
 .footer__mailing-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .footer__mailing-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer__mailing-button {

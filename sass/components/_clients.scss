@@ -12,17 +12,9 @@
   .clients {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 
-    @media screen and (max-width: 480px) {
-      width: 100%;
-      flex-wrap: wrap;
-      
-    }
-        @media screen and (max-width: 768px) {
-          width: 100%;
-          flex-wrap: wrap;
-    
-        }
+   
 
         
 
@@ -31,7 +23,21 @@
   width: 170px;
   height: 92px;
 
- 
+@media screen and (min-width: 480px) {
+    width: 210px;
+    flex-wrap: wrap;
+
+  }
+
+     @media screen and (min-width: 768px) {
+       width: 226px;
+       flex-wrap: wrap;
+  
+     }
+
+         @media screen and (min-width: 1200px) {
+          width: 170px;
+         }
 }
 .clients__link {
     display: flex;
