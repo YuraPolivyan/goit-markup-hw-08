@@ -395,7 +395,7 @@ section {
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
+  width: 450px;
   -webkit-transition: var(--animation);
   transition: var(--animation);
   background-color: #ffffff;
@@ -406,6 +406,11 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1199px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__text {
@@ -1010,13 +1015,21 @@ section {
 }
 
 .portfolio {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__item:not(:last-child) {
@@ -1060,13 +1073,39 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__item {
+    width: 370px;
+  }
+}
 
 .card__item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .card__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
 
 .card__item:not(:nth-child(n+7)) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__item:not(:nth-child(n+7)) {
+    margin-bottom: 0px;
+  }
 }
 
 .card__link {
@@ -1140,6 +1179,11 @@ section {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__portfolio-box {
+    height: 150px;
+  }
 }
 
 .card__projects-title {

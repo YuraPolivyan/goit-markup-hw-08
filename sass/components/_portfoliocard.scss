@@ -1,12 +1,43 @@
   .card {
     display: flex;
     flex-wrap: wrap;
+
+  
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    gap: 30px;
+
   }
+
+  }
+
+.card__item{
+
+  @media screen and (min-width: 768px) {
+      width: 354px;
+  
+    }
+         @media screen and (min-width: 1200px) {
+           width: 370px;
+    
+         }
+}
+
   .card__item:not(:nth-child(3n)) {
-    margin-right: 30px;
+margin-right: 0;
+    
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+      
+    }
   }
   .card__item:not(:nth-child(n + 7)) {
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 0px;
+    
+      }
   }
 
   .card__link {
@@ -71,6 +102,11 @@
     border-bottom: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      height: 150px;
+      
+    }
   }
   .card__projects-title {
     font-family: var(--main-font);
