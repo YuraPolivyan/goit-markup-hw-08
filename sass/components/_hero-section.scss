@@ -24,7 +24,7 @@
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../images/background/background-image768_x1.jpg);
+            url(../images/back768x1.jpg);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -32,7 +32,7 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../images/background/background-image768_x2.jpg);
+                url(../images/back768x2.jpg);
         }
 
         @media screen and (min-width: 1200px) {
@@ -44,7 +44,7 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(../images/background/background-image1600_x2.jpg);
+                    url(../images/team2.jpg);
             }
         }
     }

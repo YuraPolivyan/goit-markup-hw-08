@@ -163,7 +163,7 @@ section {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
   .logo {
     margin-right: 93px;
   }
@@ -309,14 +309,14 @@ section {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/background-image768_x1.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/background-image768_x1.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/back768x1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back768x1.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/background-image768_x2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/background-image768_x2.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/back768x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back768x2.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -327,8 +327,8 @@ section {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background/background-image1600_x2.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/background-image1600_x2.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/team2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team2.jpg);
   }
 }
 .hero__title {
@@ -992,26 +992,129 @@ section {
   }
 }
 .mobile-menu {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--primery-white-color);
+  opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primery-white-color);
-  z-index: 1;
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
 }
 .mobile-menu.is-open {
+  position: fixed;
+  opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  display: block;
+  z-index: 2;
 }
 .mobile-menu__close {
   position: absolute;
+  background-color: var(--primery-white-color);
   top: 10px;
   right: 15px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu__close:hover, .mobile-menu__close:focus {
+  fill: var(--accent-color);
+}
+.mobile-menu__item {
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+.mobile-menu__link {
+  color: var(--primery-title-color);
+  -webkit-transition: var(--animation);
+  transition: var(--animation);
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--accent-color);
+}
+.mobile-menu__nav .is-active {
+  color: var(--accent-color);
+}
+.mobile-menu__group {
+  margin-top: auto;
+  width: 100%;
+}
+.mobile-menu__contact {
+  margin-bottom: 64px;
+}
+.mobile-menu__contact-link {
+  color: var(--primery-text-color);
+}
+.mobile-menu__contact-link:hover, .mobile-menu__contact-link:focus {
+  color: var(--accent-color);
+}
+.mobile-menu__contact-item:first-child {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__contact-item:first-child {
+    font-size: 34px;
+  }
+}
+.mobile-menu__contact-item:last-child {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -10px;
+  margin-top: -10px;
+  max-width: 100%;
+  margin-top: 64px;
+}
+.social-list__item {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.social-list__link {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  display: block;
+  padding-right: 10px;
+  border-right: 1px solid var(--primery-white-color);
+}
+.social-list__item:last-child .social-list__link {
+  padding: 0;
+  border: 0;
+}
+
+.mobile-menu__nav {
+  margin-bottom: 306px;
 }
 
 .portfolio {
@@ -1540,4 +1643,10 @@ section {
 }
 .footer-icon-link:hover, .footer-icon-link:focus {
   background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .section-none {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
