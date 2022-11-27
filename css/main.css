@@ -1113,10 +1113,6 @@ section {
   border: 0;
 }
 
-.mobile-menu__nav {
-  margin-bottom: 306px;
-}
-
 .portfolio {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
