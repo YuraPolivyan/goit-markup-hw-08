@@ -52,7 +52,7 @@
               <a class="mobile-menu__link" href="">Контакти</a>
             </li>
           </ul>
-          <ul>
+          
               <div class="mobile-menu__group">
                 <ul class="mobile-menu__contact">
                   <li class="mobile-menu__contact-item">
@@ -81,7 +81,7 @@
                   </li>
                 </ul>
               </div>
-          </ul>
+          
         </div>
 
       </div>
@@ -450,7 +450,7 @@
           <div class="form__fild">
           <label class="form__name-text" for="name">Ім'я</label>
           
-          <input class="form__input" type="name" name="name" id="name">
+          <input class="form__input" type="name" id="name"  name="name" >
           <svg class="form__modal-icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-person-black"></use>
             </svg>
@@ -475,11 +475,13 @@
           <label class="form__name-text" for="comment">Коментар</label>
           <textarea class="form__field-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
           </div>
-          <label class="form__checkbox">
+          <label class="form__checkbox"></label>
             <input class="form__modal-check form__checkbox-opacity" type="checkbox" id="terms-checkbox" name="terms-checkbox" >
-            <label class="form__checkbox-label" for="terms-checkbox"><span class="form__modal-text">Погоджуюся з розсилкою та приймаю <a class="form__check-link" href="">Умови договору</a></span></label>
+            <label class="form__checkbox-label" for="terms-checkbox">
+              <span class="form__modal-text">Погоджуюся з розсилкою та приймаю <a class="form__check-link" href="">Умови договору</a></span>
+            </label>
           
-          </label>
+          
           <button type="submit" class="form__button-submit">Відправити</button>
           
         </form>
