@@ -69,6 +69,13 @@ section {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -78,6 +85,11 @@ section {
   z-index: 1;
   border-bottom: 1px solid #ececec;
   color: var(--primery-white-color);
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    position: relative;
+  }
 }
 
 .header-nav__link {
@@ -1317,8 +1329,9 @@ section {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  padding-left: 0;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .footer__container {
     padding-left: 75px;
     padding-right: 90px;
@@ -1514,6 +1527,7 @@ section {
   width: 100%;
   height: 50px;
   padding-left: 16px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1522,6 +1536,7 @@ section {
 @media screen and (min-width: 1200px) {
   .footer__mailing input {
     margin-bottom: 0;
+    width: 354px;
   }
 }
 
@@ -1607,6 +1622,12 @@ section {
   line-height: 30px;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+@media screen and (max-width: 1199px) {
+  .footer__mailing-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer__mailing-icon {
