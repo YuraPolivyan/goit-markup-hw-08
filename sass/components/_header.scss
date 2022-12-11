@@ -12,6 +12,10 @@
           position: relative;
         }
 
+                    @media screen and (max-width: 768px) {
+                      height: 60px;
+                    }
+
   
 }
 
@@ -71,6 +75,13 @@
 .header-nav {
     display: flex;
     align-items: center;
+margin-left: 93px;
+
+@media screen and (max-width: 1199px) {
+    margin-left: 88px;
+
+  }
+   
     
 }
 
@@ -102,10 +113,7 @@
   
     }
 
-         @media screen and(min-width: 767px) {
-    margin-right: 93px;
-          
-         }
+   
 }
 
 
@@ -211,7 +219,7 @@
   }
   .menu-button {
     
-    
+    margin-top: 10px;
     margin-left: auto;
     width: 40px;
     height: 40px;
