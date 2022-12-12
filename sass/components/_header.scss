@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -75,13 +75,16 @@
 .header-nav {
     display: flex;
     align-items: center;
-margin-left: 93px;
 
-@media screen and (max-width: 1199px) {
-    margin-left: 88px;
+
+@media screen and (min-width: 1199px) {
+    margin-left: 93px;
 
   }
-   
+    @media screen and (min-width: 768px) {
+      margin-left: 88px;
+  
+    }
     
 }
 
