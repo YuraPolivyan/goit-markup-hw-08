@@ -40,7 +40,7 @@
 }
 
 .address-item{
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1199px) {
             align-items: center;
            text-align: center;
     
@@ -131,7 +131,7 @@
 .box {
     margin-left: 70px;
 
-    @media screen and(max-width: 1200px) {
+    @media screen and(max-width: 1199px) {
             
             margin-left: 0;
             text-align: center;

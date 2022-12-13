@@ -425,10 +425,10 @@ section {
 .modal {
   padding: 40px;
   position: relative;
-  top: 50%;
+  top: 30px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   background: #fff;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
@@ -1394,7 +1394,7 @@ section {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .address-item {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1491,7 +1491,7 @@ section {
 .box {
   margin-left: 70px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .box {
     margin-left: 0;
     text-align: center;
